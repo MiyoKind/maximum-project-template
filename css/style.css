@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+* {
+    font-family: 'Press start 2P', monospace;
+}
+
+form, .game-form {
+    background-color: #e6bf83;
+}
+
+.bg-image {
+    background: url("../assets/adventure-bg.jpg") no-repeat center center/cover fixed;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.game-form {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #000;
+    max-width: 600px;
+}
+
+.title {
+    color: #7c5400;
+    text-shadow: -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+    animation: glowing 2s ease-in-out infinite;
+}
+
+label {
+    font-size: 15px;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow:
+                -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
+                -3px -3px 0 #000,
+                3px -3px 0 #000,
+                -3px 3px 0 #000,
+                3px 3px 0 #000;
+    }
+    50% {
+        text-shadow:
+                -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
+                -3px -3px 10px #000,
+                3px -3px 10px #000,
+                -3px 3px 10px #000,
+                3px 3px 10px #000;
+    }
+    100% {
+        text-shadow:
+                -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
+                -3px -3px 0 #000,
+                3px -3px 0 #000,
+                -3px 3px 0 #000,
+                3px 3px 0 #000;
+    }
+}
+
+.btn-8bit {
+    background-color: #f6a5c0;
+    border: 2px solid #ff2b6e;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ff2b6e;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-8bit:hover {
+    background-color: #ff2b6e;
+    border-color: #f6a5c0;
+    text-shadow: none;
+}
